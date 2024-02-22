@@ -1,4 +1,5 @@
 // Asking Name
+let score = 0;
 function getName() {
   let name = prompt("What is your name?");
   document.write("Nice to meet you " + name);
@@ -10,6 +11,7 @@ function getSport() {
   let answer = choice.charAt(0).toLowerCase();
   if( answer === "y" ) {
     document.write(" Cool, I'm an athlete also. ");
+    score++;
   } else {
     document.write(" That's totally fine... ");
   }
@@ -22,6 +24,7 @@ function getAge() {
   let answer = Age.charAt(0).toLowerCase();
   if( answer === "y" ) {
     document.write(" I bet your back hurts 🤣 ");
+    score++
   } else {
     document.write(" Go Party! ");
   }
@@ -33,6 +36,7 @@ function getSneakers() {
   let answer = Sneaker.charAt(0).toLowerCase();
   if( answer === "y" ) {
     document.write(" Awesome, so am I! ");
+    score++
   } else {
     document.write(" I'll buy the pairs you don't. ");
   }
@@ -44,6 +48,7 @@ function getPizza() {
   let answer = pizza.charAt(0).toLowerCase();
   if( answer === "y" ) {
     document.write(" Ohhh Yeahhh, my kind of friend. ");
+    score++
   } else {
     document.write(" Ehh, guess you're ok.... ");
   }
@@ -60,6 +65,7 @@ function guessTheNumber() {
     if( guess === 7 ) {
       correctAnswer = true;
       numberOfGuesses = i; 
+      score++
       break;
     }
   }
@@ -79,6 +85,7 @@ function favoriteColor() {
     let userGuess = prompt("What's my favorite color?");
     if (favoriteColors.indexOf(userGuess.toLowerCase()) !== -1) {
       alert("You know me well!");
+      score++
       break;
     } else if (i === 6) {
       alert("Sorry you couldn't guess it, the color is" + favoriteColors);
@@ -87,6 +94,6 @@ function favoriteColor() {
     }
 
   }
+  alert("your score was"  + score)
 }
-favoriteColor();
 
