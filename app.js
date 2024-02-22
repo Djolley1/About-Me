@@ -74,19 +74,18 @@ function guessTheNumber() {
 // Array question
 
 function favoriteColor() {
-  let favoriteColors = ["black", "navy blue", "military green"];
+  let favoriteColors = [ "black",  "navy blue",  "military green" ];
   for ( let i = 1; i < 7; i++ ) {
     let userGuess = prompt("What's my favorite color?");
     if (favoriteColors.indexOf(userGuess.toLowerCase()) !== -1) {
       alert("You know me well!");
       break;
+    } else if (i === 6) {
+      alert("Sorry you couldn't guess it, the color is" + favoriteColors);
     } else {
       alert("Sorry, try once more.");
     }
 
-    if( i > 7 ) {
-      document.write("Sorry you couldn't guess it, the color is" + favoriteColors);
-    }
   }
 }
 favoriteColor();
