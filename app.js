@@ -94,6 +94,6 @@ function favoriteColor() {
     }
 
   }
-  alert("your score was"  + score)
+  alert(" your score was "  + score)
 }
 
