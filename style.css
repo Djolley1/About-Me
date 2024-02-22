@@ -1,5 +1,6 @@
 body {
     background-color: rgb(28, 28, 87);
+    border: 10px solid black;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,11 +9,13 @@ body {
 
 header {
     background-color: blue;
+    border: 15px solid black;
     text-align: center;
     padding: 20px;
 }
 
 footer {
+    border: 10px solid black;
     text-align: center;
     padding: 10px;
     position: fixed;
